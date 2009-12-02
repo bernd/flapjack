@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'ostruct'
 require 'net/http'
 require 'yajl/json_gem'
 
