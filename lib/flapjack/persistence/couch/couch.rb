@@ -78,8 +78,8 @@ module Flapjack
         end
 
         def request(request)
-          response = Net::HTTP.start(@host, @port) {|http| http.request(request)}
-         
+          response = ::Net::HTTP.start(@host, @port) {|http| http.request(request)}
+
           unless response.kind_of?(Net::HTTPSuccess)
             handle_error(request, response)
           end
