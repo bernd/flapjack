@@ -18,7 +18,8 @@ Feature: flapjack-worker-manager
     Then 10 instances of "flapjack-worker" should be running
 
   Scenario: Stopping all workers
-    Given there are 5 instances of the flapjack-worker running
+    Given the flapjack-worker-manager is on my path
+    And there are 5 instances of the flapjack-worker running
     And beanstalkd is running on localhost
     When I run "flapjack-worker-manager stop" 
     Then 0 instances of "flapjack-worker" should be running
