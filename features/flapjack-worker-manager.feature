@@ -1,4 +1,4 @@
-Feature: flapjack-notifier-manager
+Feature: flapjack-worker-manager
   To scale Flapjack easily and efficiently
   A sysadmin
   Must be able to manage clusters of workers
