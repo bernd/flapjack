@@ -1,20 +1,20 @@
- * write pure-SQLite3 persistence backend
+ * refactor couchdb backend to be less bongtastic
+ * write "action" hooks API on notifications
+
  * write migration tool for sqlite3 => couchdb
 
+ * write persistence backend setup tool (create couchdb/sqlite3 database)
 
  * add lintian-like checks for verifying packagability (see http://pkg-ruby-extras.alioth.debian.org/upstream-devs.html)
  * sandbox flapjack-worker
  * write beanstalkd.yreserve to simplify code
  * write beanstalkd.jput, beanstalkd.jreserve for native json api
- * start side project to have admin interface back onto couchdb
 
  * build config file/cli options proxy
  * build easily runnable benchmarks for flapjack-{worker,notifier}
 
  * update installation guide
- * refactor couchdb backend to be less bongtastic
-
- * make notification/escalation logic pluggable
+ * clean up persistence API to be more user friendly
 
  * write puppet manifests
  * provide common interface for loading checks into beanstalk (extract from populator)
